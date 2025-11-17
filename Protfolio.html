@@ -1,0 +1,218 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Developer Portfolio</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    nav{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(18, 18, 62);
+    }
+
+    nav ul{
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    .left{
+      font-size: 1.5rem;
+    }
+
+    .firstSection > div{
+      width: 30%;
+    }
+
+    .firstSection{
+      display: flex;
+      justify-content: space-around;
+      margin: 80px 0;
+      align-items: center;
+    }
+
+    .leftSection{
+      font-size: 2.8rem;
+      margin: 20px 0;
+      line-height: 45px;
+    }
+
+    .rightSection img{
+      width: 350px;
+      margin: 50px 0;
+    }
+
+    .purple{
+      color: rgb(136, 22, 241);
+    }
+
+    nav ul li{
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      color: rgb(156, 156, 241);
+    }
+
+    #element {
+      color: rgb(170, 107, 228);
+    }
+
+    /* Social Links */
+    .social-links {
+      margin-top: 15px;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      margin-right: 15px;
+      font-weight: 600;
+    }
+
+    .github-link {
+      color: #00eaff;    
+    }
+
+    .linkedin-link {
+      color: #ff6bcb;     
+    }
+
+    .github-link:hover {
+      color: white;
+    }
+
+    .linkedin-link:hover {
+      color: white;
+    }
+
+
+    .workSection {
+      width: 80%;
+      margin: 80px auto;
+      text-align: center;
+    }
+
+      .workSection hr {
+      border: 3px solid rgb(70, 70, 120);
+      width: 90%;            
+      margin: auto;
+      margin-bottom: 20px;
+      
+}
+
+
+    .workSection h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: rgb(200, 200, 255);
+    }
+
+    .workSection p {
+      font-size: 1.2rem;
+      color: rgb(190,190,255);
+      margin-bottom: 20px;
+    }
+
+    .workList {
+      list-style: none;
+      color: rgb(200,200,255);
+      line-height: 26px;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Vikki's Portfolio</div>
+
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Services</a></li>
+        <li><a href="/">Projects</a></li>
+        <li><a href="/">Contact me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        Hello, My name is <span class="purple">Vikki Kumar</span><br>
+        <div>I am a student of Lovely Professional University</div><br>
+        <div>and I am passionate about</div><br>
+
+        <span id="element"></span>
+
+        <div class="social-links">
+          <a class="github-link" href="https://github.com/itsvikki62" target="_blank">GitHub</a>
+          <a class="linkedin-link" href="https://www.linkedin.com/in/itsvikki" target="_blank">LinkedIn</a>
+        </div>
+
+      </div>
+
+      <div class="rightSection">
+        <img src="bg.png.png" alt="profile image">
+      </div>
+    </section>
+
+    <section class="workSection">
+      <hr>
+      <h1>Work Experience</h1>
+
+      <p>I am a Fresher and currently gaining experience by working on projects.</p>
+
+      <ul class="workList">
+        <li>• Fresher Web Developer</li>
+        <li>• Basic knowledge of HTML, CSS, JavaScript</li>
+        <li>• Building responsive web pages</li>
+        <li>• Actively improving skills & learning projects</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script>
+    var typed = new Typed('#element', {
+      strings: [
+        'Software Engineer',
+        'Web Developer',
+        'Frontend Designer',
+        'JavaScript Enthusiast'
+      ],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true
+    });
+  </script>
+
+</body>
+</html>
+
+
