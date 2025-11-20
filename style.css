@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* A good practice for easier layout management */
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    /* For smooth scrolling on nav link clicks */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 62);
+    position: sticky;
+    /* Makes the nav bar stick to the top */
+    top: 0;
+    z-index: 100;
+    /* Ensures nav is above other content */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstSection>div {
+    width: 40%;
+    /* Adjusted for better spacing */
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 130px 0;
+    align-items: center;
+}
+
+.leftSection {
+    font-size: 2.8rem;
+    line-height: 1.5;
+    /* Use relative units for line-height */
+}
+
+.rightSection img {
+    width: 100%;
+    /* Make image responsive */
+    max-width: 350px;
+    /* But not larger than 350px */
+    margin: 50px 0;
+}
+
+.purple {
+    color: rgb(136, 22, 241);
+}
+
+nav ul li {
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: rgb(156, 156, 241);
+}
+
+#element {
+    color: rgb(170, 107, 228);
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 34px;
+}
+
+.btn {
+  padding: 12px 24px;
+  background: linear-gradient(45deg, #ff6bcb, #00eaff);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 107, 203, 0.6);
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 25px;
+}
+
+.social-links a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-right: 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.github-link {
+    color: #00eaff;
+}
+
+.linkedin-link {
+    color: #ff6bcb;
+}
+
+.github-link:hover,
+.linkedin-link:hover {
+    color: white;
+}
+
+.workSection {
+    max-width: 80vw;
+    /* Use viewport width for better responsiveness */
+    margin: 80px auto;
+}
+
+.workSection h1 {
+    font-size: 2rem;
+    color: rgb(200, 200, 255);
+}
+
+.main-hr {
+    border: 0;
+    background: rgb(156, 156, 241);
+    height: 1.2px;
+    margin: 60px 84px;
+}
+
+.workSection .box {
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+
+.workSection .vertical {
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 120px;
+}
+
+/* --- Contact Section --- */
+.contact-section {
+    max-width: 80vw;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 2rem;
+    color: rgb(200, 200, 255);
+    margin-bottom: 20px;
+}
+
+.contact-intro {
+    font-size: 1.2rem;
+    color: rgb(190, 190, 255);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.contact-details p {
+    font-size: 1.1rem;
+}
+
+.contact-details a {
+    color: #00eaff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: #ff6bcb;
+}
+
+/* --- Responsive Design --- */
+
+/* Tablets and smaller desktops */
+@media screen and (max-width: 1024px) {
+    .firstSection {
+        flex-direction: column-reverse;
+        /* Stack sections, image on top */
+        text-align: center;
+    }
+
+    .firstSection>div {
+        width: 80%;
+        /* Give more width on smaller screens */
+    }
+
+    .leftSection {
+        font-size: 2.2rem;
+        margin-top: 30px;
+    }
+
+    .social-links {
+        justify-content: center;
+        display: flex;
+    }
+  
+  .buttons {
+    margin-top: 25px;
+  }
+
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    nav ul {
+        margin-top: 15px;
+    }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 600px) {
+    .left {
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .leftSection {
+        font-size: 1.8rem;
+        line-height: 1.4;
+    }
+
+    .rightSection img {
+        margin: 20px 0;
+    }
+
+    .workSection {
+        margin-top: 0;
+    }
+
+    .workSection h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-section {
+        margin: 40px auto;
+    }
+}
